@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ValueCar - Know Your Car Price</title>
+    <style>
+        /* Dark Theme & Font */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0d0d0d;
+            color: #ffffff;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        /* Animated Car Background */
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://cdn.pixabay.com/photo/2017/08/30/04/37/car-2691315_1280.png') no-repeat center;
+            background-size: contain;
+            animation: moveCar 5s infinite alternate ease-in-out;
+            opacity: 0.2;
+        }
+
+        @keyframes moveCar {
+            from { transform: translateX(-5%); }
+            to { transform: translateX(5%); }
+        }
+
+        /* Centered Content */
+        .content {
+            position: relative;
+            z-index: 2;
+            padding-top: 20vh;
+        }
+
+        h1 {
+            font-size: 48px;
+            color: #00aaff;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #cccccc;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            margin: 10px;
+            font-size: 18px;
+            color: white;
+            text-decoration: none;
+            background: linear-gradient(90deg, #0077ff, #00aaff);
+            border-radius: 30px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: linear-gradient(90deg, #0055cc, #0077ff);
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="content">
+        <h1>ValueCar</h1>
+        <p>Find the best price for your second-hand car.</p>
+        <a href="#" class="btn">Know Your Car Price</a>
+        <a href="#" class="btn">Contact Us</a>
+    </div>
+</body>
+</html>
